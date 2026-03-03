@@ -1,12 +1,12 @@
-'use client';
+  'use client';
 
-import { useState } from 'react';
-import { VehicleFilters } from '@/types';
-import { Search, SlidersHorizontal, X } from 'lucide-react';
+  import { useState } from 'react';
+  import { VehicleFilters } from '@/types';
+  import { Search, SlidersHorizontal, X } from 'lucide-react';
 
-interface FilterBarProps {
-  onFilter: (filters: VehicleFilters) => void;
-}
+  interface FilterBarProps {
+    onFilter: (filters: VehicleFilters) => void;
+  }
 
 const BRANDS = ['Toyota', 'Honda', 'Hyundai', 'Kia', 'Nissan', 'Mazda', 'Ford', 'Chevrolet', 'Volkswagen', 'Suzuki'];
 const CURRENT_YEAR = new Date().getFullYear();
