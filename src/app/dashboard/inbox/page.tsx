@@ -210,7 +210,7 @@ export default function InboxPage() {
                           marginBottom: 4,
                         }}
                       >
-                        {q.askedBy.name}
+                        {q.askedBy?.name ?? user?.name ?? 'Yo'}
                       </p>
                       <p style={{ fontSize: 15 }}>{q.content}</p>
                     </div>
