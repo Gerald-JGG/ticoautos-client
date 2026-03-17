@@ -62,9 +62,11 @@ export default function VehicleDetailPage() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleQuestion = async (e: React.FormEvent) => {
+  const handleQuestion = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     if (!questionText.trim()) return;
+    if (questionText.trim().length < 5)
+      return toast.error("La pregunta debe tener al menos 5 caracteres");
     setSubmitting(true);
     try {
       const q = await questionsApi.create(id as string, questionText.trim());
