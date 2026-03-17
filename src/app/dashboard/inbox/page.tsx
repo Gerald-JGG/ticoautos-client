@@ -200,7 +200,7 @@ export default function InboxPage() {
                         flexShrink: 0,
                       }}
                     >
-                      {q.askedBy.name?.[0]?.toUpperCase()}
+                      {q.askedBy?.name?.[0]?.toUpperCase() ?? '?'}
                     </div>
                     <div>
                       <p
