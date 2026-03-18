@@ -4,7 +4,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [About](#about)
 - [Tech Stack](#tech-stack)
@@ -82,7 +82,7 @@ src/
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/Gerald-JGG/ticoautos-client
 cd ticonautos-frontend
 
 # Install dependencies
